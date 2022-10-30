@@ -84,18 +84,14 @@ function action(content, choice) {
                 stateManager.notChangeChoice.successTry++;
                 document.getElementsByName("lSuccessTry_nochange")[0].innerHTML =
                 stateManager.notChangeChoice.successTry;
-                stateManager.changeChoice.unsuccessTry++;
-                document.getElementsByName("lUnsuccessTry_change")[0].innerHTML =
-                stateManager.changeChoice.unsuccessTry;
+
                 
             }
             else{
                 stateManager.notChangeChoice.unsuccessTry++;
                 document.getElementsByName("lUnsuccessTry_nochange")[0].innerHTML =
                 stateManager.notChangeChoice.unsuccessTry;
-                stateManager.changeChoice.successTry++;
-                document.getElementsByName("lSuccessTry_change")[0].innerHTML =
-                stateManager.changeChoice.successTry;
+
             }
 
         }
@@ -107,17 +103,13 @@ function action(content, choice) {
                 stateManager.changeChoice.successTry++;
                 document.getElementsByName("lSuccessTry_change")[0].innerHTML =
                 stateManager.changeChoice.successTry;
-                stateManager.notChangeChoice.unsuccessTry++;
-                document.getElementsByName("lUnsuccessTry_nochange")[0].innerHTML =
-                stateManager.notChangeChoice.unsuccessTry;
+
             }
             else{
                 stateManager.changeChoice.unsuccessTry++;
                 document.getElementsByName("lUnsuccessTry_change")[0].innerHTML =
                 stateManager.changeChoice.unsuccessTry;
-                stateManager.notChangeChoice.successTry++;
-                document.getElementsByName("lSuccessTry_nochange")[0].innerHTML =
-                stateManager.notChangeChoice.successTry;
+
             }
         }
 
